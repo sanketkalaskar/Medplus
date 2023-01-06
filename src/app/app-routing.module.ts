@@ -4,11 +4,12 @@ import { HomeComponent } from './components/home/home.component';
 import { MedicineHomeComponent } from './components/medicine-home/medicine-home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
+
 const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'medicine-home',component:MedicineHomeComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'page-not-found',component:PageNotFoundComponent}
+  {path:'page-not-found',component:PageNotFoundComponent},
 ];
 
 @NgModule({
